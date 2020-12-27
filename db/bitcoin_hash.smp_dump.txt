@@ -1,0 +1,21 @@
+
+State Machine - |bitcoin_hash|isSecond
+Name isSecond.01 
+isSecond.00 0 
+isSecond.01 1 
+
+State Machine - |bitcoin_hash|state
+Name state.WRITE state.FIRSTHASH state.SHAOVER16 state.SHAUNDER16 state.READSECOND2 state.READSECOND1 state.READSECOND0 state.FIRSTBLOCKRESULTS state.FIRSTBLOCKCONT state.COMPUTEFIRSTBLOCK state.READ1 state.READ0 state.IDLE 
+state.IDLE 0 0 0 0 0 0 0 0 0 0 0 0 0 
+state.READ0 0 0 0 0 0 0 0 0 0 0 0 1 1 
+state.READ1 0 0 0 0 0 0 0 0 0 0 1 0 1 
+state.COMPUTEFIRSTBLOCK 0 0 0 0 0 0 0 0 0 1 0 0 1 
+state.FIRSTBLOCKCONT 0 0 0 0 0 0 0 0 1 0 0 0 1 
+state.FIRSTBLOCKRESULTS 0 0 0 0 0 0 0 1 0 0 0 0 1 
+state.READSECOND0 0 0 0 0 0 0 1 0 0 0 0 0 1 
+state.READSECOND1 0 0 0 0 0 1 0 0 0 0 0 0 1 
+state.READSECOND2 0 0 0 0 1 0 0 0 0 0 0 0 1 
+state.SHAUNDER16 0 0 0 1 0 0 0 0 0 0 0 0 1 
+state.SHAOVER16 0 0 1 0 0 0 0 0 0 0 0 0 1 
+state.FIRSTHASH 0 1 0 0 0 0 0 0 0 0 0 0 1 
+state.WRITE 1 0 0 0 0 0 0 0 0 0 0 0 1 

@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at bitcoin_hash.sv(72): always construct contains both blocking and non-blocking assignments File: C:/Users/Christian/Desktop/BITCOIN/bitcoin_hash.sv Line: 72
+Info (10281): Verilog HDL Declaration information at bitcoin_hash.sv(54): object "H" differs only in case from object "h" in the same scope File: C:/Users/Christian/Desktop/BITCOIN/bitcoin_hash.sv Line: 54
